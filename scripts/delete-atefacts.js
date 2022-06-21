@@ -1,0 +1,5 @@
+console.log("github", github)
+console.log("context", context)
+console.log("core", core)
+console.log("io", io)
+console.log("exec", exec)

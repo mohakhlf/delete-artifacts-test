@@ -1,0 +1,11 @@
+name: Lint, test & build
+on:
+  workflow_dispatch:
+
+  delete-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Script
+        uses: actions/github-script@v6.1.0
+        with:
+          script: node scripts/delete-artifacts.js
