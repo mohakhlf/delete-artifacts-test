@@ -1,0 +1,10 @@
+name: Build and upload artifact
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-upload:
+    uses: ./.github/workflows/artifacts.yaml
+    with:
+      artifact-name: ${{ github.ref_name }}
