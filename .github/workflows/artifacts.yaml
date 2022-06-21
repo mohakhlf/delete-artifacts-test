@@ -1,8 +1,16 @@
 name: Build and upload artifact
 on:
+  workflow_dispatch:
+    inputs:
+      artifact-name:
+        description: 'Name of the artifact'     
+        required: true
+        type: string
+        default: ${{ github.ref_name }}
   workflow_call:
     inputs:
      artifact-name:
+       description: 'Name of the artifact'
        required: true
        type: string
 jobs:
