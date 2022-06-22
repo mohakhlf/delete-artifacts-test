@@ -16,7 +16,7 @@ module.exports = async({ github, context }) => {
         await github.request(
             `DELETE /repos/${context.repo.owner}/${context.repo.repo}/actions/artifacts/${artifact.id}`, {
                 owner: context.repo.owner,
-                repo: context.repo.repo,
+                repo: github.repository,
                 artifact_id: artifact.id,
             }
         )

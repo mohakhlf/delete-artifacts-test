@@ -4,6 +4,10 @@ on:
     # input:
     #   - name: delete_artifacts
     #     default: true
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   delete-artifacts:
     runs-on: ubuntu-latest
