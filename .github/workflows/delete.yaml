@@ -9,3 +9,4 @@ jobs:
         uses: actions/github-script@v6.1.0
         with:
           script: node scripts/delete-artifacts.js
+          debug: true
