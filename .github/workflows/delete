@@ -1,11 +1,6 @@
-name: Lint, test & build
+name: Delete artifacts
 on:
   workflow_dispatch:
-    environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: true 
-        default: 'test'
 
   delete-artifacts:
     runs-on: ubuntu-latest
