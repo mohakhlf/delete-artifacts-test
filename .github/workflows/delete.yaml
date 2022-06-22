@@ -1,6 +1,6 @@
 name: Delete artifacts
 on:
-  workflow_dispatch:
+  workflow_call:
 jobs:
   delete-artifacts:
     runs-on: ubuntu-latest

@@ -8,3 +8,5 @@ jobs:
     uses: ./.github/workflows/artifacts.yaml
     with:
       artifact-name: ${{ github.ref_name }}
+  delete-artifacts:
+    uses: ./.github/workflows/delete.yaml
