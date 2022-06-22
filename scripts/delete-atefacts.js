@@ -1,5 +1,6 @@
-console.log("github", github)
-console.log("context", context)
-console.log("core", core)
-console.log("io", io)
-console.log("exec", exec)
+const artifacts_to_delete = github.rest.actions.listArtifactsForRepo({
+    github.repository_owner,
+    github.repository,
+})
+
+console.log('artifacts_to_delete', artifacts_to_delete)
