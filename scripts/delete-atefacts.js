@@ -1,2 +1,3 @@
-console.log('context: '
-    context)
+module.exports = ({ context }) => {
+    return context
+}
