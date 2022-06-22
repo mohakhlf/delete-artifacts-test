@@ -21,9 +21,9 @@ module.exports = async({ github, context }) => {
             //     }
             // )
         await github.rest.actions.deleteArtifact({
-            owner,
-            repo,
-            artifact_id,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            artifact_id: artifact.id,
         });
     })
 }
