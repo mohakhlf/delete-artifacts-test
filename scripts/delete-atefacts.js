@@ -1,4 +1,4 @@
-const artifacts_to_delete = github.rest.actions.listArtifactsForRepo({
+const artifacts_to_delete = await github.rest.actions.listArtifactsForRepo({
     github.repository_owner,
     github.repository,
 })
