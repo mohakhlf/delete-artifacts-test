@@ -17,6 +17,6 @@ jobs:
         uses: actions/github-script@v6.1.0
         with:
           script: |
-            const script = require('./path/to/script.js')
-            console.log(script({github, context}))
+            const script = require('./scripts/delete-artifacts.js');
+            console.log(script({ context }))
           debug: true
