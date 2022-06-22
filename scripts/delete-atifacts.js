@@ -1,5 +1,5 @@
 module.exports = async({ github, context }) => {
-    console.log('context', context)
+    console.log('context', context.inputs)
         // console.log('inputs', context)
         // const artifacts_responds = await github.rest.actions.listArtifactsForRepo({
         //     owner: context.repo.owner,
