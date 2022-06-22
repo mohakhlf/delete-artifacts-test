@@ -4,5 +4,5 @@ module.exports = async({ github, context }) => {
         repo: context.repo.repo,
     })
 
-    console.log('artifacts_list', artifacts_list);
+    console.log('artifacts_list', artifacts_list.data);
 }
