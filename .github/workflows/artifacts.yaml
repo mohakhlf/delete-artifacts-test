@@ -6,7 +6,7 @@ on:
         description: 'Name of the artifact'     
         required: true
         type: string
-        default: test
+        default: main
   workflow_call:
     inputs:
      artifact-name:

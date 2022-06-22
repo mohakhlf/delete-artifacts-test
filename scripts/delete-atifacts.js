@@ -13,12 +13,12 @@ module.exports = async({ github, context }) => {
     console.log('artifacts_list_with_develop', artifacts_list_with_develop)
     artifacts_list_with_develop.map(async(artifact) => {
         console.log('artifact', artifact)
-            // await github.request(
-            //     `DELETE /repos/${context.repo.owner}/${context.repo.repo}/actions/artifacts/${artifact.id}`, {
-            //         owner: context.repo.owner,
-            //         repo: context.repo.repo,
-            //         artifact_id: artifact.id,
-            //     }
-            // )
+        await github.request(
+            `DELETE /repos/${context.repo.owner}/${context.repo.repo}/actions/artifacts/${artifact.id}`, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                artifact_id: artifact.id,
+            }
+        )
     })
 }
