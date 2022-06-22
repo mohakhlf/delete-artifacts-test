@@ -13,10 +13,12 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '${{ steps.package-engines-versions.outputs.nodeVersion }}'
-      - name: GitHub Script
-        uses: actions/github-script@v6.1.0
-        with:
-          script: |
-            const script = require('./scripts/delete-artifacts.js');
-            console.log(script({ context }))
-          debug: true
+      - name: ls -la
+        run: ls -la
+      # - name: GitHub Script
+      #   uses: actions/github-script@v6.1.0
+      #   with:
+      #     script: |
+      #       const script = require('./scripts/delete-artifacts.js');
+      #       console.log(script({ context }))
+      #     debug: true
