@@ -1,5 +1,6 @@
 module.exports = async({ github, context }) => {
-    console.log('inputs.artifacts_to_delete', context.inputs)
+    console.log('context', context)
+        // console.log('inputs', context)
         // const artifacts_responds = await github.rest.actions.listArtifactsForRepo({
         //     owner: context.repo.owner,
         //     repo: context.repo.repo,
