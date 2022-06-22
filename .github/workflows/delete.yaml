@@ -1,9 +1,14 @@
 name: Delete artifacts
 on:
   workflow_dispatch:
-    # input:
-    #   - name: delete_artifacts
-    #     default: true
+    inputs:
+      artifacts_to_delete:
+        type: choice
+        description: "Select the artifacts to delete"
+        required: true
+        options:
+          - "develop"
+          - "tags"
 permissions:
   contents: read
   pull-requests: write
