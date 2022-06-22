@@ -7,4 +7,4 @@ jobs:
   build-and-upload:
     uses: ./.github/workflows/artifacts.yaml
     with:
-      artifact-name: ${{ github.ref_name }}
+      artifact-name: test
