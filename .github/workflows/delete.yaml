@@ -27,3 +27,4 @@ jobs:
             const script = require('./scripts/delete-atifacts.js');
             await script({github, context})
           debug: true
+          github-token: ${{ secrets.ARTIFACTS_TOKEN }}
